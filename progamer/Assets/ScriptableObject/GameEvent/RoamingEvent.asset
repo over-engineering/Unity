@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d385eed1405af5458031923eb9331ed, type: 3}
+  m_Name: RoamingEvent
+  m_EditorClassIdentifier: 
+  Id: 1
+  name: RoamingEvent
+  eventMessage: 
+  IndivisualRatio: 0.9
+  IndivisisualStrType: 0000000002000000
+  indStrRatio:
+  - 0.5
+  - 0.5
+  TeamRatio: 0.1
+  TeamStrType: 00000000
+  teamStrRatio:
+  - 1
+  lines: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
+  OriginLines: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
+  totalIndStr: 6.8500004
+  lineProp:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  minProp:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  maxProp:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  advAbilityType: 0100000002000000
+  advAbilityRatio:
+  - 0.5
+  - 0.5
+  participantLines: 0000000001000000030000000400000006000000070000000800000009000000
+  targetLine: 9

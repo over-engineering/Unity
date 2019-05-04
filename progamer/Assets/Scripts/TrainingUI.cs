@@ -1,25 +1,43 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class TrainingUI : MonoBehaviour
 {
+    [SerializeField] private Button[] buttons;
+    [SerializeField] private Training[] trainings;
+    // private Training[] trainings;
 
-    [SerializeField] private AbilityUI AUI;
-
-    public void OnClickTraining() {
-        // string body = "";
-        // GameManager.Instance.rest.Post("/api/training", "TakeTraining", body);
-        TakeTrainingFromServer("training0", "5", "5");
+    void Start() {
+        for (int i = 0; i < buttons.Length; i++) {            
+            buttons[i].onClick.AddListener(OnClickTraining);
+        }
     }
 
-    public void OnClickExit() {
+    public void OnClick() {
         foreach (Transform child in transform) {
-            child.gameObject.SetActive(false);
+            child.gameObject.SetActive(true);
         }    
     }
 
-    public void TakeTrainingFromServer(string trainingId, string level, string time) {
-        Debug.Log("TakeTrainingFromServer");
-        string chracterId = GameManager.Instance.CharacterId;        
-        StartCoroutine(RestClient.Instance.Get(RestClient.ProgamerBaseURL, "/api/training/" + chracterId + "/" + trainingId + "/" + level + "/" + time + "/" + "1", AUI.SetAbility));
+    public void Setup(Training[] trainings) {
+        this.trainings = new Training[trainings.Length];
+        for (int i = 0; i < trainings.Length; i++) {            
+            this.trainings[i] = trainings[i];
+            // buttons[i].gameObject.GetComponent<Training>().SetTraining(training.id, training.target_ability);            
+            buttons[i].onClick.AddListener(OnClickTraining);
+        }
     }
+
+    public void OnClickTraining() {
+        int index = EventSystem.current.currentSelectedGameObject.transform.GetSiblingIndex();
+        trainings[index].TakeTraining(5, 3f, 0.8f);
+        // Api.TakeTraining(trainings[index].id, "5", "1");
+    }
+
+    // public void OnClickExit() {
+    //     foreach (Transform child in transform) {
+    //         child.gameObject.SetActive(false);
+    //     }    
+    // }    
 }

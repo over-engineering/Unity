@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442f4a266296d9e4dbdd0bab6b51cc41, type: 3}
+  m_Name: Alistar
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  id: 0
+  type: 0
+  name: 'Alistar '
+  maxHP: 500
+  maxMP: 100
+  attackDamage: 10
+  armor: 10
+  abilityPower: 10
+  magicResistance: 10
+  movementSpeed: 300
+  iLevelUpExp: 10
+  iHP: 10
+  iMP: 10
+  iAD: 10
+  iAR: 10
+  iAP: 10
+  iMR: 10
+  iMS: 10
+  range: 100
+  skills:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

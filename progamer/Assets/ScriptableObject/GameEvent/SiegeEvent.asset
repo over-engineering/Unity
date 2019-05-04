@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423bdf9727910b740858b5492113cc1c, type: 3}
+  m_Name: SiegeEvent
+  m_EditorClassIdentifier: 
+  Id: 2
+  name: 
+  eventMessage: 
+  IndivisualRatio: 0.5
+  IndivisisualStrType: 00000000
+  indStrRatio:
+  - 1
+  TeamRatio: 0.5
+  TeamStrType: 00000000
+  teamStrRatio:
+  - 1
+  lines: 0000000002000000030000000400000005000000070000000800000009000000
+  OriginLines: 0000000002000000030000000400000005000000070000000800000009000000
+  totalIndStr: 1
+  lineProp:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  minProp:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  maxProp:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  advAbilityType: 0200000004000000
+  advAbilityRatio:
+  - 0.5
+  - 0.5
+  minTime: 15
