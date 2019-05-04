@@ -31,7 +31,7 @@ public class Hero : MonoBehaviour
     [SerializeField] private Text heroNameText;
     [SerializeField] private Text heroLevelText;
     [SerializeField] private Text heroGoldText;
-    public HealthBar HealthBar { get; private set; }
+    public HealthBar HealthBar;
     // public SimpleHealthBar HealthBar{ get; private set; }
 
     void Awake() {
